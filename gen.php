@@ -35,7 +35,7 @@ if ($menu == 'y' OR $menu == 'Y'){
             return $string;
         }
         for ($i=0; $i < $jumlah; $i++){
-            echo $base.random($total-strlen($base));
+            echo " ".$base.random($total-strlen($base));
             echo "\n";
         }
     }
@@ -53,7 +53,7 @@ if ($menu == 'y' OR $menu == 'Y'){
             return $string;
         }
         for ($i=0; $i < $jumlah; $i++){
-            echo $base.random($total-strlen($base));
+            echo " ".$base.random($total-strlen($base));
             echo "\n";
         }
     }
@@ -79,7 +79,7 @@ elseif ($menu == 'n' OR $menu == 'N'){
             return $string;
         }
         for ($i=0; $i < $jumlah; $i++){
-            echo random($total);
+            echo " ".random($total);
             echo "\n";
         }
     }
@@ -97,7 +97,7 @@ elseif ($menu == 'n' OR $menu == 'N'){
             return $string;
         }
         for ($i=0; $i < $jumlah; $i++){
-            echo random($total);
+            echo " ".random($total);
             echo "\n";
         }
     }
