@@ -20,28 +20,26 @@ if pil == 'n' or pil == 'N' :
         def rand(chars=string.ascii_uppercase + string.digits):
             return ''.join(random.choice(chars) for _ in range(size))
         for i in range(total):
-            print (rand())
+            print (' '+rand())
     elif case == 'l' or case == 'L' :
         def rand(chars=string.ascii_lowercase + string.digits):
             return ''.join(random.choice(chars) for _ in range(size))
         for i in range(total):
-            print (rand())
+            print (' '+rand())
 elif pil == 'y' or pil == 'Y' :
-    base = int(input(C+' Jumlah digit Base '+R+'> '+W))
-    base1 = str(input(C+' Input Base '+R+'> '+W))
-    variant = base1
+    base = str(input(C+' Input Base '+R+'> '+W))
     size = int(input(C+' Jumlah digit Kode '+R+'> '+W))
     case = str(input(C+' UPPER/lower (U/l)? '+W))
     total = int(input(C+' Total Kode '+R+'> '+W))
     if case == 'u' or case == 'U' :
         def rand(chars=string.ascii_uppercase + string.digits):
-            return ''.join(random.choice(chars) for _ in range(size-base))
+            return ''.join(random.choice(chars) for _ in range(size-len(base)))
         for i in range(total):
-            print (variant+rand())
+            print (' '+base+rand())
     elif case == 'l' or case == 'L' :
         def rand(chars=string.ascii_lowercase + string.digits):
-            return ''.join(random.choice(chars) for _ in range(size-base))
+            return ''.join(random.choice(chars) for _ in range(size-len(base)))
         for i in range(total):
-            print (variant+rand())
+            print (' '+base+rand())
 else :
     exit()
